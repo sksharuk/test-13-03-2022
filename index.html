@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Log In </title>
+	<style>
+		body{
+			margin: 0px;
+			padding: 0px;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #f2ebeb;
+			flex-direction: column;
+		}
+		h1{
+			margin: 0px;
+			padding: 0px;
+			font-size: 48px;
+			font-weight: 1000;
+		}
+
+		h2{
+			margin: 0px;
+			padding: 0px;
+			line-height: 26px;
+			
+			
+		}
+
+		h4{
+			margin: 0px;
+			padding: 0px;
+			font-size: 22px;
+			font-weight: 700;
+		}
+
+		.container{
+			width: 80vw;
+			height: 85vh;
+			background: #f2ebeb;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.left{
+			height: 100%;
+			width: 55%;
+			
+			display: flex;
+			
+			flex-direction: column;
+		}
+
+		.left-container-wrapper{
+			width: 450px;
+			height: 116px;
+			
+			margin-top: 190px;
+			margin-left: 160px;
+		}
+
+		.left-heading{
+			color: blue;
+			font-family: monospace;
+		}
+
+		.left-para{
+			font-family: monospace;
+		}
+
+
+		.right{
+			height: 100%;
+			width: 45%;
+			
+			display: flex;
+			justify-content: center;
+			
+			flex-direction: column;
+			gap: 16px;
+		}
+
+		.login{
+			height: 57%;
+			width: 84%;
+			background: white;
+			display: flex;
+			
+			
+			flex-direction: column;
+			border-radius:5px;
+			box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+			
+		}
+
+		.right-top-wrapper{
+			height: 240px;
+			width: 95%;
+			background: white;
+			display: flex;
+			
+			margin-left: 11px;
+			flex-direction: column;
+			box-shadow: rgba(27, 31, 35, 0.25) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+			
+		}
+
+		.input-tag{
+			padding: 16px;
+			border-radius: 3px;
+			margin-top: 9px;
+			
+			border: 1px solid #e9dddd;
+		}
+		
+		.input-tag:active{
+			
+			border: 3px solid blue;
+		}
+
+		.login-bottom{
+			
+		}
+
+		.login-btn{
+			padding: 10px 190px;
+			
+			margin-top: 12px;
+			color: white;
+			background: blue;
+			border: none;
+			border-radius: 4px;
+			margin-bottom: 10px;
+			cursor: pointer;
+			transition : .3s;
+		}
+
+
+		.login-btn:hover{
+			padding: 10px 190px;
+			
+			margin-top: 12px;
+			color: black;
+			background: #ff5200;
+			border: none;
+			border-radius: 4px;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+
+		.forgot{
+			text-decoration: none;
+			margin-left: 155px;
+		}
+		a:active{
+			color: red;
+		}
+
+
+		.right-bottom-wrapper{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: red;
+			
+		}
+
+		.create-new-btn{
+			padding: 10px 30px;
+			margin-left: 10px;
+			display: flex;
+		}
+
+
+		.create{
+			
+			height: 60px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			
+			
+			
+			
+		}
+
+		.create-btn{
+			background: green;
+			color: white;
+			padding: 1px 18px;
+			border-radius: 4px;
+			border: none;
+			margin-top: 30px;
+			cursor: pointer;
+			transition : .3s;
+		}
+
+
+
+		.create-btn:hover{
+			background: #ff5200;
+			color: white;
+			padding: 3px 22px;
+			border-radius: 4px;
+			border: none;
+			margin-top: 35px;
+			cursor: pointer;
+		}
+
+		.right-bottom-para{
+			margin-left: 97px;
+			
+			
+			
+		}
+		.footer{
+			width: 100vw;
+			height: 15vh;
+			background: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+
+		.footer-header{
+			color: white;
+			
+			
+		}
+
+
+
+
+	</style>
+    
+</head>
+
+<body>
+	<div class= "container">
+		
+		<div class="left">
+			<div class="left-container-wrapper">
+				<h1 class="left-heading"><b> facebook </b><h1>
+				<h4 class="left-para"> Facebook helps you connect and share with the people in your life.</h4>
+			</div>
+		</div>
+		
+		<div class="right">
+			<div class="login">
+				<div class="right-top-wrapper">
+					<div class="login-top">
+						<input type="text" placeholder="Email address or phone number" size="57" class="input-tag">
+						<input type="password" placeholder="Password" size="57" class="input-tag">
+						
+					</div>
+					
+					<div class="login-bottom">
+						<button class="login-btn"><h2> Log In</h2></button>
+						<a href="#" class="forgot"> Forgotten Password?</a>
+						
+					</div>
+				</div>
+				
+				<div class="create">
+					<div class="create-bottom">
+						<button class="create-btn"><h3> Create New Account</h3></button>
+						
+						
+					</div>
+				</div>
+			
+			</div>
+			<p class="right-bottom-para"><b>Create a Page</b> for a celebrity, brand or business</p>
+			
+			
+		</div>
+	</div>
+	
+	<div class="footer">
+		<h2 class="footer-header">© 2022 Facebook. Built using HTML AND CSS. </h2>
+		<h2 class="footer-header"> Created By SK SHARUK MEHETAB</h2>
+	
+	</div>
+    
+</body>
+</html>
